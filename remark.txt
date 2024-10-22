@@ -1,0 +1,20 @@
+Prescription ID: 0
+Remark: This product is very good indeed for you.(Client)
+
+
+
+Prescription ID: 0
+Remark: This product is not very good indeed for you.(Optometrist)
+
+
+
+Prescription ID: 0
+Remark: This product is not very good(Optometrist)
+
+
+
+Prescription ID: 0
+Remark: This product is not very indeed for you, atlest I am not really sure bout it any more, so try(Optometrist)
+
+
+
