@@ -12,14 +12,14 @@ public class TestPrescription {
         
 
         
-        //First Name has to have 4 min and max 20 characters
-        //check with invalid First name, less than min 4 or more than max 20 characters
+        //First Name has to have 4 min and max 15 characters
+        //check with invalid First name, less than min 4 or more than max 15 characters
         Assert.assertEquals(false, prescription.addPrescription(3,"Sam", "Micheal", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor Dan","9/12/24"));
         Assert.assertEquals(false, prescription.addPrescription(4,"Alonelypumpkinbytheriver", "Micheal", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor Dan","9/12/24"));
         
         
-        //Last Name has to have 4 min and max 20 characters
-        //check with invalid Last name, less than min 4 or greater than max 20 characters
+        //Last Name has to have 4 min and max 15 characters
+        //check with invalid Last name, less than min 4 or greater than max 15 characters
         Assert.assertEquals(false, prescription.addPrescription(5,"Sierra", "Rao", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor Dan","9/12/24"));
         Assert.assertEquals(false, prescription.addPrescription(6,"Felix", "Alonelyapplebytheriver", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor Dan","9/12/24"));
         
@@ -45,6 +45,12 @@ public class TestPrescription {
         //Check for invalid cylinder value less than -4 or greater than 4
         Assert.assertEquals(false, prescription.addPrescription(13,"Felix", "Mitchell", "Melbourne 3000 CBD Australia", 0, 90, -10, "Doctor Dan","9/12/24"));
         Assert.assertEquals(false, prescription.addPrescription(14,"Macroon", "Cabone", "Melbourne 3000 CBD Australia", 0, 90,10, "Doctor Dan","9/12/24"));
+        
+
+        //Optometrist has to have 8 min and max 25 characters
+        //check with invalid optometrist, less than min 8 or greater than max 25 characters
+        Assert.assertEquals(false, prescription.addPrescription(5,"Sierra", "Raoly", "Melbourne 3000 CBD Australia", 0, 90, 0, "Dan","9/12/24"));
+        Assert.assertEquals(false, prescription.addPrescription(6,"Felix", "Angelo", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor SupermegaAwesomeguyforreal","9/12/24"));
         
         
     }
