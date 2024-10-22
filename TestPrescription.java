@@ -66,7 +66,7 @@ public class TestPrescription {
 
         prescription = new Prescription(); // new prescription object is created as to reset count increment of remarks for the prescription
 
-        //category can only accept Client or Optometrist
+        //category can only accept client or optometrist
         //check with invalid data for category
         Assert.assertEquals(false, prescription.addRemark("This product is very good indeed for you.", "User"));
         Assert.assertEquals(false, prescription.addRemark("This product is not very good indeed for you.", "Pediatrician"));

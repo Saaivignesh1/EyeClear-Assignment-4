@@ -127,7 +127,7 @@ public class Prescription {
             System.out.println("Remark not Capitalized");
             return false;
         }
-        //check if category is either "Client" or "Optometrist"
+        //check if category is either "client" or "optometrist"
         //exit program if category is not equal to client or optometrist
         if (!category.equals("client")&&!category.equals("optometrist")){
             System.out.println("Invalid Category, only client and optometrist is accepted");
