@@ -64,7 +64,7 @@ public class Prescription {
             return false;
         }
 
-        //check if sphere is less than 0 or more than 180(not valid)
+        //check if axis is less than 0 or more than 180(not valid)
         if ( axis < 0 || axis > 180){
             System.out.println("Invalid Axis, cannot be less than 0 or more than 180");
             return false;
