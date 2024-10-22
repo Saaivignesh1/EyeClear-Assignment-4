@@ -3,7 +3,7 @@ import org.junit.*;
 
 public class TestPrescription {
     @Test
-    //Check with valid inputs
+    
     public void testAddPrescription(){
         Prescription prescription = new Prescription();
         //Check with valid inputs
