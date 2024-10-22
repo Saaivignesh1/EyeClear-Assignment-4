@@ -129,8 +129,8 @@ public class Prescription {
         }
         //check if category is either "Client" or "Optometrist"
         //exit program if category is not equal to client or optometrist
-        if (!category.equals("Client")&&!category.equals("Optometrist")){
-            System.out.println("Invalid Category");
+        if (!category.equals("client")&&!category.equals("optometrist")){
+            System.out.println("Invalid Category, only client and optometrist is accepted");
             return false;
         }
 

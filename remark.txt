@@ -1,20 +1,20 @@
 Prescription ID: 0
-Remark: This product is very good indeed for you.(Client)
+Remark: This product is very good indeed for you.(client)
 
 
 
 Prescription ID: 0
-Remark: This product is not very good indeed for you.(Optometrist)
+Remark: This product is not very good indeed for you.(optometrist)
 
 
 
 Prescription ID: 0
-Remark: This product is not very good(Optometrist)
+Remark: This product is not very good(optometrist)
 
 
 
 Prescription ID: 0
-Remark: This product is not very indeed for you, atlest I am not really sure bout it any more, so try(Optometrist)
+Remark: This product is not very indeed for you, atlest I am not really sure bout it any more, so try(optometrist)
 
 
 

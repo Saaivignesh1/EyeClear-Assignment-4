@@ -57,7 +57,7 @@ class Eyewear{
                 System.out.println("remark chosen(Max of 2 remarks per prescription)");
                 System.out.println("Enter Remark: ");
                 remark = inSS.nextLine();
-                System.out.println("Enter Category(Only Client and Optometrist is acceptable): ");
+                System.out.println("Enter Category(Only client and optometrist is acceptable): ");
                 category = inSS.nextLine();
 
                 if(!prescription.addRemark(remark, category)){

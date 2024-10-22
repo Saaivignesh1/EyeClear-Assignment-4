@@ -54,8 +54,8 @@ public class TestPrescription {
     public void testAddRemark(){
         Prescription prescription = new Prescription();
         //check with Valid Inputs
-        Assert.assertEquals(true, prescription.addRemark("This product is very good indeed for you.", "Client"));
-        Assert.assertEquals(true, prescription.addRemark("This product is not very good indeed for you.", "Optometrist"));
+        Assert.assertEquals(true, prescription.addRemark("This product is very good indeed for you.", "client"));
+        Assert.assertEquals(true, prescription.addRemark("This product is not very good indeed for you.", "optometrist"));
 
 
         prescription = new Prescription(); // new prescription object is created as to reset count increment of remarks for the prescription
@@ -68,26 +68,26 @@ public class TestPrescription {
 
         //Remark has to have 6 min and max 20 words
         //check with invalid Remark, less than min 6 or more than max 20 words
-        Assert.assertEquals(false, prescription.addRemark("Bad", "Client"));
-        Assert.assertEquals(false, prescription.addRemark("This product is not very good indeed for you, atlest I am not re sure bout it any more, so try find something else", "Optometrist"));
+        Assert.assertEquals(false, prescription.addRemark("Bad", "client"));
+        Assert.assertEquals(false, prescription.addRemark("This product is not very good indeed for you, atlest I am not re sure bout it any more, so try find something else", "optometrist"));
 
 
         //Remark has to have 6 min and max 20 words
         //check with valid Remark, with border exactly 6 and 20 characters
-        Assert.assertEquals(true, prescription.addRemark("This product is not very good", "Optometrist"));
-        Assert.assertEquals(true, prescription.addRemark("This product is not very indeed for you, atlest I am not really sure bout it any more, so try", "Optometrist"));
+        Assert.assertEquals(true, prescription.addRemark("This product is not very good", "optometrist"));
+        Assert.assertEquals(true, prescription.addRemark("This product is not very indeed for you, atlest I am not really sure bout it any more, so try", "optometrist"));
 
         prescription = new Prescription(); // new prescription object is created as to reset count increment of remarks for the prescription
 
 
         //The first letter of the the first work in Remark has to be capitalized
         //Check with invalid remark with the first letter not capitalized
-        Assert.assertEquals(false, prescription.addRemark("this product is not very good, I don't like it", "Client"));
-        Assert.assertEquals(false, prescription.addRemark("this product is not very indeed for you, atlest I am not really sure, don't try", "Optometrist"));
+        Assert.assertEquals(false, prescription.addRemark("this product is not very good, I don't like it", "client"));
+        Assert.assertEquals(false, prescription.addRemark("this product is not very indeed for you, atlest I am not really sure, don't try", "optometrist"));
 
         //None of the parameters should work with an empty string
         //Check for invalid remark and category, using an empty sting
-        Assert.assertEquals(false, prescription.addRemark("", "Client"));
+        Assert.assertEquals(false, prescription.addRemark("", "client"));
         Assert.assertEquals(false, prescription.addRemark("This product is not very good, don't buy it", ""));
 
 
