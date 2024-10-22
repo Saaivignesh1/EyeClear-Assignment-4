@@ -49,8 +49,8 @@ public class TestPrescription {
 
         //Optometrist has to have 8 min and max 25 characters
         //check with invalid optometrist, less than min 8 or greater than max 25 characters
-        Assert.assertEquals(false, prescription.addPrescription(5,"Sierra", "Raoly", "Melbourne 3000 CBD Australia", 0, 90, 0, "Dan","9/12/24"));
-        Assert.assertEquals(false, prescription.addPrescription(6,"Felix", "Angelo", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor SupermegaAwesomeguyforreal","9/12/24"));
+        Assert.assertEquals(false, prescription.addPrescription(15,"Sierra", "Raoly", "Melbourne 3000 CBD Australia", 0, 90, 0, "Dan","9/12/24"));
+        Assert.assertEquals(false, prescription.addPrescription(16,"Felix", "Angelo", "Melbourne 3000 CBD Australia", 0, 90, 0, "Doctor SupermegaAwesomeguyforreal","9/12/24"));
         
         
     }
